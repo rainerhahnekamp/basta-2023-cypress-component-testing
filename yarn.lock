@@ -187,10 +187,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/cdk@^15.0.4", "@angular/cdk@15.1.1":
-  version "15.1.1"
-  resolved "https://registry.npmjs.org/@angular/cdk/-/cdk-15.1.1.tgz"
-  integrity sha512-99zaW+EqS/pJh2BLxC+L+/mAyaC3oncRUqRL4WWLENZI2lqD6mCe/kRYDL57WbSZaI54Of38u9GhkBVA/0rn7A==
+"@angular/cdk@^15.1.5", "@angular/cdk@15.1.5":
+  version "15.1.5"
+  resolved "https://registry.npmjs.org/@angular/cdk/-/cdk-15.1.5.tgz"
+  integrity sha512-hybUkjvLJcr+WKMMN4uo8aa+kwg4ExTrSBDgUUqsCD0zvcpNwWPRgHeXTNawAZVWV6iBOaHgX6O3XZmsWcs5Rg==
   dependencies:
     tslib "^2.3.0"
   optionalDependencies:
@@ -264,17 +264,17 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/material-date-fns-adapter@^15.0.4":
-  version "15.1.1"
-  resolved "https://registry.npmjs.org/@angular/material-date-fns-adapter/-/material-date-fns-adapter-15.1.1.tgz"
-  integrity sha512-6J9BT0T7U0egZCy2b85LPHIb/od5qAL4uroj3aRxFPm8sMVTpmV9us7VWvZ+SbvDJbu/kbJIcRNrSBwbNMFG5A==
+"@angular/material-date-fns-adapter@^15.1.5":
+  version "15.1.5"
+  resolved "https://registry.npmjs.org/@angular/material-date-fns-adapter/-/material-date-fns-adapter-15.1.5.tgz"
+  integrity sha512-Tx3kOtfNsaxGCcV35sZZPe/FxlJ5LPENtN9qwuWm3NkYOYX+E2rqvkAO5ZGYgSjfmBQF+fek/C9CNdVKBV+IAw==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/material@^15.0.4", "@angular/material@15.1.1":
-  version "15.1.1"
-  resolved "https://registry.npmjs.org/@angular/material/-/material-15.1.1.tgz"
-  integrity sha512-QhyTJv9CnimXKXb4LCH93ovJVAdnoHyElwspl80PcfAV/6A6VrRQAflFoul0WL4WPrV50DG7TWYiEwHPpblbCw==
+"@angular/material@^15.1.5", "@angular/material@15.1.5":
+  version "15.1.5"
+  resolved "https://registry.npmjs.org/@angular/material/-/material-15.1.5.tgz"
+  integrity sha512-1N+pylZ7aoyh8/+kbiE/ks2IFUqzCtEyZTohTCm+MEXISUr2fU5c3k7uW5jRF3mjkmBeKycGe5haaOA8N2VZkw==
   dependencies:
     "@material/animation" "15.0.0-canary.684e33d25.0"
     "@material/auto-init" "15.0.0-canary.684e33d25.0"
@@ -2437,24 +2437,24 @@
     "@material/theme" "15.0.0-canary.684e33d25.0"
     tslib "^2.1.0"
 
-"@ngrx/effects@^15.0.0":
-  version "15.1.0"
-  resolved "https://registry.npmjs.org/@ngrx/effects/-/effects-15.1.0.tgz"
-  integrity sha512-/8YnhzyAOTdI9RYJAqmIIvh8ip4M4x4DrRyrdDDc62oFM3TrVOvknUUpMp5NxKpKph8hSpevAwaeEBDWGnKkjg==
+"@ngrx/effects@^15.3.0":
+  version "15.3.0"
+  resolved "https://registry.npmjs.org/@ngrx/effects/-/effects-15.3.0.tgz"
+  integrity sha512-L+Ie4XFrzYBJOV7hNQvR5hUvG1PSCDd6niwOOJg5nm9zEjSnAxveJ/a3B52pRwge6EYOnrQne97jyArxOzPCJA==
   dependencies:
     tslib "^2.0.0"
 
-"@ngrx/store-devtools@^15.0.0":
-  version "15.1.0"
-  resolved "https://registry.npmjs.org/@ngrx/store-devtools/-/store-devtools-15.1.0.tgz"
-  integrity sha512-InEFdjg2cE0nLgdWWcjXa50SFlzxSVOoeudRqkqQlJlpJ/0RPljlRXHXT63E5cUpryTxYdK2QcE4n5vngq/48g==
+"@ngrx/store-devtools@^15.3.0":
+  version "15.3.0"
+  resolved "https://registry.npmjs.org/@ngrx/store-devtools/-/store-devtools-15.3.0.tgz"
+  integrity sha512-o39T11T994j5XzwiNquhRHVQiFYlOg1PJWmV++LdIaXD0zYovc9lzNDnZJy04mt9XPTDPu8QmcmzV44zUtY4vg==
   dependencies:
     tslib "^2.0.0"
 
-"@ngrx/store@^15.0.0", "@ngrx/store@15.1.0":
-  version "15.1.0"
-  resolved "https://registry.npmjs.org/@ngrx/store/-/store-15.1.0.tgz"
-  integrity sha512-Wxjme7yJnxD6il6fGZdFTdSs9gL+6OFW8/II9vApFokUb0E7UQBm8RYb9dYJ2IQJvWXwO+2ItSaecRUZgt39kA==
+"@ngrx/store@^15.3.0", "@ngrx/store@15.3.0":
+  version "15.3.0"
+  resolved "https://registry.npmjs.org/@ngrx/store/-/store-15.3.0.tgz"
+  integrity sha512-8cd0zWkOZ3TedDQHyOzUxZD1HHa0fU8fgzVX/2eIq6wmnleUxHVOKSJvA+DdE4GRoryFqVhAp17L1r5eC2QYHA==
   dependencies:
     tslib "^2.0.0"
 
