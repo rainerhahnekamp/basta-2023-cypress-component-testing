@@ -31,8 +31,8 @@
   },
   "devDependencies": {
     "@angular-builders/jest": "latest",
-    "@angular-devkit/build-angular": "^15.0.5",
-    "@angular/cli": "^15.0.5",
+    "@angular-devkit/build-angular": "^15.1.6",
+    "@angular/cli": "^15.1.6",
     "@angular/compiler-cli": "^15.0.4",
     "@briebug/jest-schematic": "^4.0.0",
     "@types/jest": "latest",
