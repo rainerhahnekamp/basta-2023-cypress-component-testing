@@ -35,7 +35,7 @@ export class RequestInfoComponent implements OnInit {
   #formBuilder = inject(NonNullableFormBuilder);
   #route = inject(ActivatedRoute);
   #holidaysRepository = inject(HolidaysRepository);
-  #cookieService = inject(CookieService);
+  // #cookieService = inject(CookieService);
 
   formGroup = this.#formBuilder.group({
     address: ['']
