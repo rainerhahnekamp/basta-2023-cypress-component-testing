@@ -18,7 +18,7 @@ export class HolidaysEffects implements OnInitEffects {
   init$ = createEffect(() =>
     this.actions$.pipe(
       ofType(holidaysActions.load),
-      switchMap(() => this.httpClient.get<Holiday[]>('/holiday')),
+      switchMap(() => this.httpClient.get<Holiday[]>(`${this.configService.baseUrl}/holiday`)),
       map((holidays) =>
         holidays.map((holiday) => ({
           ...holiday,

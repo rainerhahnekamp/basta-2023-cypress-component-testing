@@ -8,25 +8,19 @@
       <p>
         <mat-form-field>
           <mat-label>Address</mat-label>
-          <input data-testid="address" formControlName="address" matInput />
+          <input data-testid="inp-address" formControlName="address" matInput />
           <mat-icon matSuffix>location_on</mat-icon>
           <mat-hint>Please enter your address</mat-hint>
         </mat-form-field>
       </p>
       <div class="flex justify-evenly my-4">
         <button mat-raised-button type="Button">Cancel</button>
-        <button
-          color="primary"
-          data-testid="btn-search"
-          mat-raised-button
-          type="submit"
-          [disabled]="formGroup.invalid"
-        >
-          Send
+        <button color="primary" data-testid="btn-search" mat-raised-button type="submit"
+          >Send
         </button>
       </div>
     </form>
-    <p data-testid="lookup-result" class="text-center h-6" aria-live="assertive" role="status">
+    <p data-testid="txt-message" class="text-center h-6" aria-live="assertive" role="status">
       <span *ngIf="lookupResult$ | async as lookupResult">{{ lookupResult }}</span>
     </p>
   </div>

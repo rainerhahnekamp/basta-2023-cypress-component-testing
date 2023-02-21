@@ -3,7 +3,7 @@ import { NonNullableFormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { Observable, Subject } from 'rxjs';
 import { map, switchMap, tap } from 'rxjs/operators';
 import { AddressLookuper } from '../services/address-lookuper.service';
-import { AsyncPipe, CommonModule, NgIf } from '@angular/common';
+import { AsyncPipe, NgIf, NgStyle } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -12,8 +12,6 @@ import { ActivatedRoute } from '@angular/router';
 import { Holiday } from '../model/holiday';
 import { HolidayCardComponent } from '../holiday-card.component';
 import { HolidaysRepository } from '../+state/holidays-repository.service';
-import { CookieService } from '../../shared/cookie.service';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { validateAddress } from '../services/validate-address';
 
 @Component({
@@ -28,7 +26,8 @@ import { validateAddress } from '../services/validate-address';
     MatInputModule,
     HolidayCardComponent,
     NgIf,
-    AsyncPipe
+    AsyncPipe,
+    NgStyle
   ]
 })
 export class RequestInfoComponent implements OnInit {
@@ -36,7 +35,6 @@ export class RequestInfoComponent implements OnInit {
   #formBuilder = inject(NonNullableFormBuilder);
   #route = inject(ActivatedRoute);
   #holidaysRepository = inject(HolidaysRepository);
-  // #cookieService = inject(CookieService);
 
   formGroup = this.#formBuilder.group({
     address: ['', [validateAddress]]
