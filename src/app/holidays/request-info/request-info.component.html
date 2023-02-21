@@ -1,7 +1,6 @@
 <h2>Get your brochure and enjoy your holiday</h2>
 <p>
-  Please fill in your address and below and we will send you a brochure with
-  more information.
+  Please fill in your address and below and we will send you a brochure with more information.
 </p>
 <div class="flex items-center gap-x-16">
   <div>
@@ -16,20 +15,13 @@
       </p>
       <div class="flex justify-evenly my-4">
         <button mat-raised-button type="Button">Cancel</button>
-        <button
-          color="primary"
-          data-testid="btn-search"
-          mat-raised-button
-          type="submit"
-        >
+        <button color="primary" data-testid="btn-search" mat-raised-button type="submit">
           Send
         </button>
       </div>
     </form>
-    <p data-testid="lookup-result" class="text-center">
-      <span *ngIf="lookupResult$ | async as lookupResult">
-        {{ lookupResult }}</span
-      >&nbsp;
+    <p data-testid="lookup-result" class="text-center h-6" aria-live="assertive" role="status">
+      <span *ngIf="lookupResult$ | async as lookupResult">{{ lookupResult }}</span>
     </p>
   </div>
   <app-holiday-card

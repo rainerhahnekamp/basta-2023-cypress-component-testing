@@ -22,15 +22,15 @@ export function createHoliday(holiday: Partial<Holiday> = {}): Holiday {
       teaser: 'A holiday to Vienna',
       description:
         'This is the description of this holiday. Should be a little bit longer than the teaser',
-      imageUrl: 'dummy.jpg',
+      imageUrl: 'http://localhost:4200/assets/vienna.jpg',
       typeId: 1,
       durationInDays: 3,
       minCount: 5,
       maxCount: 12,
       soldOut: false,
-      onSale: false,
+      onSale: false
     },
-    ...holiday,
+    ...holiday
   };
 }
 
