@@ -9,7 +9,7 @@ import {
   HttpClientModule,
   provideHttpClient,
   withInterceptors,
-  withInterceptorsFromDi,
+  withInterceptorsFromDi
 } from '@angular/common/http';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { routes } from './app/app.routes';
@@ -17,12 +17,10 @@ import { provideRouter } from '@angular/router';
 import { provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
 import { ConfigService } from './app/config-service';
-import {
-  baseUrlInterceptor,
-  BaseUrlInterceptor,
-} from './app/base-url.interceptor';
+import { baseUrlInterceptor, BaseUrlInterceptor } from './app/base-url.interceptor';
 import { LoadingInterceptor } from './app/shared/loading.interceptor';
 import { registerLocaleData } from '@angular/common';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 registerLocaleData(de, 'de-AT');
 
@@ -39,16 +37,14 @@ bootstrapApplication(AppComponent, {
     { provide: LOCALE_ID, useValue: 'de-AT' },
     {
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
-      useValue: { appearance: 'outline' },
+      useValue: { appearance: 'outline' }
     },
     {
       provide: ConfigService,
-      useValue: new ConfigService(environment.baseUrl),
+      useValue: new ConfigService(environment.baseUrl)
     },
-    provideHttpClient(
-      withInterceptors([baseUrlInterceptor]),
-      withInterceptorsFromDi()
-    ),
+    provideHttpClient(withInterceptors([baseUrlInterceptor]), withInterceptorsFromDi()),
     { provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true },
-  ],
+    importProvidersFrom(MatDialogModule)
+  ]
 });

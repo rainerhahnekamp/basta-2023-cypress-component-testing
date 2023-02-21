@@ -11,17 +11,13 @@ import {
   standalone: true,
 })
 export class BlinkerDirective {
-  @Input('appBlinker') appBlinker: string = '';
   currentColor = '';
   intervalId: number | undefined;
   constructor(private el: ElementRef) {}
 
   @HostListener('mouseenter') onMouseEnter() {
     this.toggle();
-    this.intervalId = window.setInterval(
-      () => this.toggle(),
-      Number(this.appBlinker || 500)
-    );
+    this.intervalId = window.setInterval(() => this.toggle(), 500);
   }
 
   @HostListener('mouseleave') onMouseLeave() {

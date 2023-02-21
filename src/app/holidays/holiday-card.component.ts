@@ -5,6 +5,7 @@ import { Holiday } from './model/holiday';
 import { NgIf } from '@angular/common';
 import { BlinkerDirective } from '../shared/blinker.directive';
 import { TestidDirective } from '../shared/testid.directive';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-holiday-card',
@@ -18,18 +19,19 @@ import { TestidDirective } from '../shared/testid.directive';
       <mat-card-content>
         {{ holiday.description }}
       </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button>Request Brochure</button>
+      <mat-card-actions *ngIf="requestBrochure">
+        <a
+          [routerLink]="['/holidays/request-info', holiday.id]"
+          mat-raised-button
+          >Request Brochure</a
+        >
       </mat-card-actions>
     </mat-card>
   </div>`,
   standalone: true,
-  imports: [MatCardModule, MatButtonModule, NgIf],
-  hostDirectives: [
-    { directive: BlinkerDirective, inputs: ['appBlinker:blinkerInterval'] },
-    { directive: TestidDirective, inputs: ['testid'] },
-  ],
+  imports: [MatCardModule, MatButtonModule, NgIf, RouterLink],
 })
 export class HolidayCardComponent {
   @Input() holiday: Holiday | undefined;
+  @Input() requestBrochure = true;
 }
