@@ -2,7 +2,7 @@ import { asyncScheduler, of, scheduled } from 'rxjs';
 import { createHoliday } from '../model/holiday';
 import { TestBed } from '@angular/core/testing';
 import { RequestInfoComponent } from './request-info.component';
-import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { provideHttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
 import { provideState, provideStore } from '@ngrx/store';
@@ -11,7 +11,6 @@ import { provideEffects } from '@ngrx/effects';
 import { HolidaysEffects } from '../+state/holidays.effects';
 import { provideConfigMock } from '../../config-service';
 import { MatDialogModule } from '@angular/material/dialog';
-import { Test } from 'mocha';
 import { AddressLookuper } from '../services/address-lookuper.service';
 
 describe('RequestInfo Component', function () {
