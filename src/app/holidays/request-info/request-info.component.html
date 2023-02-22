@@ -15,7 +15,12 @@
       </p>
       <div class="flex justify-evenly my-4">
         <button mat-raised-button type="Button">Cancel</button>
-        <button color="primary" data-testid="btn-search" mat-raised-button type="submit"
+        <button
+          color="primary"
+          data-testid="btn-search"
+          mat-raised-button
+          type="submit"
+          [disabled]="formGroup.invalid"
           >Send
         </button>
       </div>
