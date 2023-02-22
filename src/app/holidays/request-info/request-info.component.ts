@@ -13,6 +13,7 @@ import { Holiday } from '../model/holiday';
 import { HolidayCardComponent } from '../holiday-card.component';
 import { HolidaysRepository } from '../+state/holidays-repository.service';
 import { validateAddress } from '../services/validate-address';
+import { CookieService } from '../../shared/cookie.service';
 
 @Component({
   selector: 'eternal-request-info',
